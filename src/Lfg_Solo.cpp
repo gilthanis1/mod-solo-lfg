@@ -47,7 +47,7 @@ class lfg_solo_GroupScript : public GroupScript
 public:
     lfg_solo_GroupScript() : GroupScript("lfg_solo") {}
 
-    void OnCreate(Group* group, Player* leader)
+    void OnCreate(Group* group, Player* /*leader*/)
     {
         if (sConfigMgr->GetOption<bool>("SoloLFG.Enable", true))
         {
